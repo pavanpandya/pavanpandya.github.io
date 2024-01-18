@@ -1,19 +1,30 @@
 # Jobs
-# VP of Global Communications
-- company: Springfield International Human Rights Outreach
-  position: VP of Global Communications
-  duration: Oct, 2013 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+# DAIICT
+- company: Dhirubhai Ambani Institute of Technology
+  position: Research Intern
+  duration: Nov, 2022 &mdash; June 2023
+  description: >-
+    <ul class="job-description"
+      <li>Orchestrated the collection of an extensive dataset exceeding 1.5 million tweets from Twitter, utilizing Twitter API and Selenium, optimized storage in MongoDB with a tailored schema for efficient retrieval and analysis.
+      </li>
+      <li>Applied advanced text preprocessing and leveraged BERT embeddings on the comprehensive dataset, aligning methodologies with referenced research to discern nuanced public sentiment on inflation, showcasing adeptness in Natural Language Processing.
+      </li>
+      <li>Executed precise topic modeling with the BERTopic library, extracting inflation-related tweets from the extensive dataset; enhanced sentiment analysis accuracy through meticulous manual annotation and strategic hyperparameter tuning.
+      </li>
+      <li>Demonstrated strong interpersonal and communication skills within a collaborative team, annotated 300 tweets resulting in the finetuning of model classification accuracy; providing nuanced insights into public expectations regarding inflation.
+      </li>
+    </ul>
 
-# Director of Digital Stratgy
-- company: United Nations Human Rights Council
-  position: Director of Digital Strategy
-  duration:  Jun, 2010 &mdash; Sept, 2013
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
-
-
-# Communications Coordinator
-- company: Springfield Women & Children's Center
-  position: Communications Coordinator
-  duration:   Jun, 2008  &mdash; May, 2010
-  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
+# HASOC
+- company: Hate Speech and Offensive Content Identification
+  position: Student Organizer
+  duration:  Jun, 2021 &mdash; Present
+  description: >-
+    <ul class="job-description"
+      <li>Spearheaded backend development, devising and implementing a robust API. Conducted extensive testing using Postman and meticulously documented the system for seamless integration.
+      </li>
+      <li>Engineered an innovative user registration system stored in MongoDB. Contributed in the development of the annotation platform while actively participating in collaborative organizational meetings, showcasing strong interpersonal skills.
+      </li>
+      <li> Promoted to Student Organizer, led the identification of hate speech in Gujarati tweets, orchestrated strategic collection of 1200 tweets using Selenium, and played a pivotal role in hands-on model fine-tuning with manual annotation of 200 tweets, leveraging Hugging Face for enhanced performance.
+      </li>
+    </ul>
