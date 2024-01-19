@@ -7,7 +7,7 @@
   duration: Dec 2023 &mdash; Present
   # url: "#"
   description: >-
-    Technologies Used: Python, Deep Learning, MLflow, DVC, AWS, Docker, GitHub Actions
+    <b>Technologies Used:</b> Python, Deep Learning, MLflow, DVC, AWS, Docker, GitHub Actions
     <ul class="resume-item-list">
       <li>Developing a deep learning model for kidney disease classification, integrating MLflow for experiment tracking and DVC (Data Version Control) for lightweight experimentation tracking and orchestration.
       </li>
@@ -24,7 +24,7 @@
   duration: July 2022 &mdash; August, 2022
   # url: "#"
   description: >-
-    Technologies Used: Python, Deep Learning, MLflow, DVC, AWS, Docker, GitHub Actions
+    <b>Technologies Used:</b>  Python, NLP, NLTK, Deep Learning
     <ul class="resume-item-list">
       <li>Engineered a cutting-edge solution employing machine learning and deep learning methodologies to effectively identify duplicate questions on the Quora platform.
       </li>
@@ -38,7 +38,7 @@
   duration: June, 2021 &mdash; August, 2021
   # url: "#"
   description: >-
-    Technologies Used: Python, IBM Watson Studio and Chat-bot, Regression Models
+    <b>Technologies Used:</b> Python, IBM Watson Studio and Chat-bot, Regression Models
     <ul class="resume-item-list">
       <li>Led the development of an AI-driven application that leveraged soil composition and weather data to achieve a 20% increase in crop yield and a 15% reduction in water usage for optimal crop selection.
       </li>
