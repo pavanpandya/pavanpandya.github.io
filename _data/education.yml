@@ -1,7 +1,8 @@
 # Degree
 - degree: Master of Science in Computer Science
-  uni: Indiana University Bloomington
+  uni: Indiana University, Bloomington
   year: 2023 &mdash; 2025
+  GPA: 3.3/4.0
   courses:
       Fall 2023:
       - CSCI - B 505 Applied Algorithms
@@ -12,9 +13,14 @@
       - CSCI - P 556 Applied Machine Learning
       - CSCI - P 565 Software Engineering - I
       - ENGR - E 516 Engineering Cloud Computing
+  summarry:
 
 - degree: Bachelor of Engineering in Computer Science
-  uni: Kadi Sarva Vishwavidyalaya
+  uni: Kadi Sarva Vishwavidyalaya, Gandhinagar
   year: 2019 &mdash; 2023
+  GPA: 8.5/10.0
   courses: Machine Learning, Deep Learning, Soft Computing, Data Structures and Algorithms, Web Developement
-  # summary: You can choose to have either a single or multiple awards
+  awards:
+    - award: Postman Student Expert
+    - award: IBM Hack Challenge 2021 Winner
+  summary: You can choose to have either a single or multiple awards
