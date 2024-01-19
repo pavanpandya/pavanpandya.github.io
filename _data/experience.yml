@@ -4,7 +4,7 @@
   position: Research Intern
   duration: Nov, 2022 &mdash; June 2023
   description: >
-    <ul class="job-description"
+    <ul class="job-description">
       <li>Orchestrated the collection of an extensive dataset exceeding 1.5 million tweets from Twitter, utilizing Twitter API and Selenium, optimized storage in MongoDB with a tailored schema for efficient retrieval and analysis.
       </li>
       <li>Applied advanced text preprocessing and leveraged BERT embeddings on the comprehensive dataset, aligning methodologies with referenced research to discern nuanced public sentiment on inflation, showcasing adeptness in Natural Language Processing.
@@ -20,7 +20,7 @@
   position: Student Organizer
   duration:  Jun, 2021 &mdash; Present
   description: >
-    <ul class="job-description"
+    <ul class="job-description">
       <li>Spearheaded backend development, devising and implementing a robust API. Conducted extensive testing using Postman and meticulously documented the system for seamless integration.
       </li>
       <li>Engineered an innovative user registration system stored in MongoDB. Contributed in the development of the annotation platform while actively participating in collaborative organizational meetings, showcasing strong interpersonal skills.
