@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Pavan Pandya"
-resume_title:                   "VP of Global Communications"
+resume_title:                   "Data Alchemist Crafting Insights 📊✨"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "pavanpandya.iu@gmail.com"
@@ -23,7 +23,7 @@ resume_contact_address:         "100 E Miller Dr, Apt 47, Bloomington, Indiana, 
 resume_header_contact_info:     "Bloomington, Indiana • 930-333-4105 • pavanpandya.iu@gmail.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but keep it brief and concise</p>"
+resume_header_intro: "In the realm where data speaks volumes, I am Pavan Pandya, a Data Alchemist weaving magic with ones and zeros. Mastering the art of Machine Learning, Deep Learning, Natural Language Processing, and Computer Vision, I orchestrate solutions that transcend algorithms. From fine-tuning models to orchestrating AI-driven applications, I navigate the digital landscape with precision. With a penchant for problem-solving and a purpose-driven approach, I am on a mission to unravel insights, elevate efficiency, and shape a future where data isn't just processed, but transformed into meaningful narratives. Join me on this journey, where every line of code is a brushstroke painting the canvas of innovation. 🌐🚀</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -53,7 +53,7 @@ resume_social_links:
   resume_linkedin_url:          "https://www.linkedin.com/in/pavanpandya"
   # resume_instagram_url:         "insert your Instagram URL here"
   resume_website_url:           "http://pavanpandya.us"
-  resume_medium_url:            "https://medium.com/@jglovier"
+  resume_medium_url:            "https://medium.com/@pavanpandya1311"
 resume_print_social_links:      true
 
 # Design settings
