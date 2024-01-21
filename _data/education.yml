@@ -1,26 +1,44 @@
-# Degree
-- degree: Master of Science in Computer Science
-  uni: Indiana University, Bloomington
-  year: 2023 &mdash; 2025
-  GPA: 3.3/4.0
-  courses:
-      Fall 2023:
-      - CSCI - B 505 Applied Algorithms
-      - CSCI - B 551 Elements of Artificial Intelligence
-      - STAT - S 520 Introduction to Statistics
-
-      Spring 2024:
-      - CSCI - P 556 Applied Machine Learning
-      - CSCI - P 565 Software Engineering - I
-      - ENGR - E 516 Engineering Cloud Computing
-  summarry:
-
+# Masters Degree
 - degree: Bachelor of Engineering in Computer Science
   uni: Kadi Sarva Vishwavidyalaya, Gandhinagar
-  year: 2019 &mdash; 2023
+  year: 2019 — 2023
   GPA: 8.5/10.0
-  courses: Machine Learning, Deep Learning, Soft Computing, Data Structures and Algorithms, Web Developement
+  courses:
+    - semester: Fall'23
+      subjects:
+        - CSCI - B 505 Applied Algorithms
+        - CSCI - B 551 Elements of Artificial Intelligence
+        - STAT - S 520 Introduction to Statistics
+    - semester: Spring'24
+      subjects:
+        - CSCI - P 556 Applied Machine Learning
+        - CSCI - P 565 Software Engineering - I
+        - ENGR - E 516 Engineering Cloud Computing
+  awards:
+  summary: 
+
+
+# Bachelors Degree
+- degree: Bachelor of Engineering in Computer Science
+  uni: Kadi Sarva Vishwavidyalaya, Gandhinagar
+  year: 2019 — 2023
+  GPA: 8.5/10.0
+  relevant_courses:
+    - Software Engineering
+    - Design & Analysis of Algorithms
+    - Computer Networks
+    - Database Management Systems
+    - Web Development
+    - Artificial Intelligence
+    - Object-Oriented Programming
+    - Data Structures and Algorithms
+    - Python
+    - Machine Learning
+    - Soft Computing
+    - Natural Language Processing
+    - Image Processing
   awards:
     - award: Postman Student Expert
     - award: IBM Hack Challenge 2021 Winner
-  summary: You can choose to have either a single or multiple awards
+  summary: During my bachelor's degree, I earned the Merit-based MYSY Scholarship, waiving half of my fees. In the National Cadet Corps, I excelled, becoming an Under Officer and achieving A+ grades in all three certifications. As a student volunteer at Xenesis, a Tech Fest Event, I contributed to my department. In extra-curricular activities, I served as the Student Coordinator for HASOC, leading backend development and hate speech identification in Gujarati tweets. Additionally, I held key roles in volunteer experiences, such as Team Lead at Postman API Fest and Under Officer in NCC, organizing cleanliness programs and COVID-19 awareness. I received numerous honors, including winning the Smart India Hackathon (College-level), Best Student Project at Postman API Fest, and being selected for the Google Cloud Computing Foundation Course.
+
