@@ -13,7 +13,7 @@
 
       <!-- You can turn off the avatar in _config.yml by setting to false -->
       {% if site.resume_avatar == 'true' %}
-      <img src="images/avatar_me.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+      <img src="../images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
       {% endif %}
 
       <!-- Your name is defined in the _config.yml file -->
@@ -60,18 +60,40 @@
           <div style="float: right;">GPA: {{education.GPA}}</div>
         </h3>
         <h4 class="resume-item-details group" itemprop="description">{{ education.degree }}
-          <!-- &bull; {{ education.year }} -->
           <div style="float: right;">{{education.year}}</div>
         </h4>
-        <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-        <p class="resume-item-copy" itemprop="description">
+
+        <!-- Display Relevant Coursework -->
+        <h4 class="resume-item-details" style="margin-top: 10px;">Relevant Coursework:</h4>
+        <ul class="resume-item-list">
+          {% for semester in education.courses %}
+          <li>
+            {{ semester.semester }}
+            <ul>
+              {% for subject in semester.subjects %}
+              <li>{{ subject }}</li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+        {% elsif education.relevant_courses %}
+          <!-- Display Relevant Courses -->
+          <h4 class="resume-item-details" style="margin-top: 10px;">Relevant Courswork:</h4>
+          <ul class="resume-item-list">
+            {% for course in education.relevant_courses %}
+              <li>{{ course }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <!-- Display Awards and Summary -->
+        <h4 class="resume-item-details" style="margin-top: 10px;">Activities:</h4>
         <ul class="resume-item-list">
           {% for award in education.awards %}
           <li>{{ award.award }}</li>
           {% endfor %}
         </ul>
-
-
         <p class="resume-item-copy">{{ education.summary }}</p>
       </div>
       {% endfor %}
@@ -135,28 +157,28 @@
         Technical Skills
       </h3>
       {% for skill in site.data.technical_skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details" style="margin-bottom: -.5em;">{{ skill.skill }}: </h4>
-          <p class="resume-item-copy" style="margin-bottom: -1em;">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
+      <div class="resume-item">
+        <h4 class="resume-item-details" style="margin-bottom: -.5em;">{{ skill.skill }}: </h4>
+        <p class="resume-item-copy" style="margin-bottom: -1em;">{{ skill.description }}</p>
+      </div>
+      {% endfor %}
       <h3 class="resume-item" style="margin-bottom: -.2rem; margin-top: 1rem;">
         Soft Skills
       </h3>
-      {% for skill in site.data.skills %}
+      <!-- {% for skill in site.data.skills %}
       <div class="resume-item">
         <h4 class="resume-item-details" style="margin-bottom: -.5em;">{{ skill.skill }}:</h4>
         <p class="resume-item-copy" style="margin-bottom: -1em;">{{ skill.description }}</p>
       </div>
-      {% endfor %}
+      {% endfor %} -->
 
     </section>
     <!-- end Skills -->
     {% endif %}
 
-    {% if site.resume_section_recognition %}
+    <!-- {% if site.resume_section_recognition %} -->
     <!-- begin Recognition -->
-    <section class="content-section">
+    <!-- <section class="content-section">
 
       <header class="section-header">
         <h2>Recognition</h2>
@@ -170,13 +192,13 @@
       </div>
       {% endfor %}
 
-    </section>
+    </section> -->
     <!-- end Recognition -->
-    {% endif %}
+    <!-- {% endif %} -->
 
-    {% if site.resume_section_associations %}
+    <!-- {% if site.resume_section_associations %} -->
     <!-- begin Associations -->
-    <section class="content-section">
+    <!-- <section class="content-section">
 
       <header class="section-header">
         <h2>Associations</h2>
@@ -191,9 +213,9 @@
       </div>
       {% endfor %}
 
-    </section>
+    </section> -->
     <!-- end Associations -->
-    {% endif %}
+    <!-- {% endif %} -->
 
     {% if site.resume_section_interests %}
     <!-- begin Interests -->
@@ -215,9 +237,9 @@
     <!-- end Interests -->
     {% endif %}
 
-    {% if site.resume_section_links %}
+    <!-- {% if site.resume_section_links %} -->
     <!-- begin Links -->
-    <section class="content-section">
+    <!-- <section class="content-section">
 
       <header class="section-header">
         <h2>Additional Links</h2>
@@ -231,9 +253,9 @@
         </ul>
       </div>
 
-    </section>
+    </section> -->
     <!-- end Links -->
-    {% endif %}
+    <!-- {% endif %} -->
 
     {% if site.resume_print_social_links %}
     <!-- begin Print Social Links -->
