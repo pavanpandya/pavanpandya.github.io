@@ -41,8 +41,9 @@
 
       {% if site.resume_looking_for_work == 'yes' %}
       <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+      <a class="contact-button no-print" href="{{ site.resume_pdf_url }}">Download PDF</a>
       {% elsif site.resume_looking_for_work == 'no' %}
-      <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+      <a class="contact-button not-looking no-print">I'm looking for work right now.</a>
       {% else %}
       {% endif %}
 

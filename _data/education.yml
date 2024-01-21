@@ -1,8 +1,8 @@
 # Masters Degree
-- degree: Bachelor of Engineering in Computer Science
-  uni: Kadi Sarva Vishwavidyalaya, Gandhinagar
-  year: 2019 — 2023
-  GPA: 8.5/10.0
+- degree: Master of Science in Computer Science
+  uni: Indiana University, Bloomington
+  year: 2023 — 2025
+  GPA: 3.3/4.0
   courses:
     - semester: Fall'23
       subjects:
@@ -14,15 +14,14 @@
         - CSCI - P 556 Applied Machine Learning
         - CSCI - P 565 Software Engineering - I
         - ENGR - E 516 Engineering Cloud Computing
-  awards:
   summary: 
 
 
 # Bachelors Degree
-- degree: Bachelor of Engineering in Computer Science
+- degree: Bachelor of Engineering in Computer Engineering
   uni: Kadi Sarva Vishwavidyalaya, Gandhinagar
   year: 2019 — 2023
-  GPA: 8.5/10.0
+  GPA: 9.10/10.0
   relevant_courses:
     - Software Engineering
     - Design & Analysis of Algorithms
