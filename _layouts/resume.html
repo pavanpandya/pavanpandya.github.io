@@ -50,6 +50,7 @@
             </div>
 
         </header>
+
         {% if site.resume_section_education %}
         <!-- begin Education -->
         <section class="content-section">
@@ -83,7 +84,7 @@
                 </ul>
                 {% elsif education.relevant_courses %}
                 <!-- Display Relevant Courses -->
-                <h4 class="resume-item-details" style="margin-top: 10px;">Relevant Courses:</h4>
+                <h4 class="resume-item-details" style="margin-top: 10px;">Relevant Coursework:</h4>
                 <ul class="resume-item-list">
                     {% for course in education.relevant_courses %}
                     <li>{{ course }}</li>
@@ -100,11 +101,13 @@
                     {% endfor %}
                 </ul>
                 <p class="resume-item-copy">{{ education.summary }}</p>
+                {% endif %}
             </div>
             {% endfor %}
         </section>
         <!-- end Education -->
         {% endif %}
+
 
 
         {% if site.resume_section_experience %}
