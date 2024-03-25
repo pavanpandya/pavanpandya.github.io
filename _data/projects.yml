@@ -1,10 +1,43 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: Kidney Disease Classifier
-  role: Data Scientist
-  duration: Dec 2023 &mdash; Present
+
+# Patient and Insurance Management System
+- project: Patient and Insurance Management System
+  role: Full Stack Developer
+  duration: Jan 2024 &mdash; Present
+  # url: "#"
+  description: >-
+    <b>Technologies Used:</b> Next JS, Django, JWT, RESTful API, PostgreSQL, Render, Docker
+    <ul class="resume-item-list">
+      <li>Spearheading a collaborative effort to develop a comprehensive Patient and Health Insurance Management System, leveraging NextJS, Django, JWT, RESTful API, PostgreSQL, Render, and Docker technologies.
+      </li>
+      <li>Leading the design and implementation of multiple user views including Patients, Doctors, and Insurance Providers, with a focus on enhancing user experience and functionality tailored to each role's requirements.
+      </li>
+      <li>Overseeing the integration of advanced features such as login/authentication mechanisms with OAuth and Duo-Authentication, customizable dashboards, real-time chat functionality, and recommendation/statistics modules, to provide a robust and user-friendly platform for managing health insurance and patient information.
+      </li>
+    </ul>
+
+# Unveiling Trends: A Cloud-Driven Data Engineering Project on AWS
+- project: Unveiling Trends: A Cloud-Driven Data Engineering Project on AWS
+  role: Data Engineer
+  duration: Jan 2024 &mdash; Present
+  # url: "#"
+  description: >-
+    <b>Technologies Used:</b> AWS, S3, Glue, lambda, Athena, QuickSight, Python
+    <ul class="resume-item-list">
+      <li>Leading a cross-functional team in the development of a cloud-based data engineering pipeline on AWS, aimed at extracting actionable insights from YouTube data to optimize online video strategies.
+      </li>
+      <li>Demonstrating expertise in AWS services including Amazon S3, Glue, Lambda, and Athena, through the design and implementation of a scalable and cost-effective architecture for efficient data processing and analysis.
+      </li>
+      <li>Employing agile project management methodologies to ensure timely progress on milestones, including foundational setup, data ingestion, schema exploration, and preliminary data processing, with a focus on delivering high-quality, actionable intelligence to stakeholders.
+      </li>
+    </ul>
+
+# End to End Kidney Disease Classification
+- project: End to End Kidney Disease Classification
+  role: Data Scientist and Data Engineer
+  duration: Nov 2023 &mdash; Jan 2024
   # url: "#"
   description: >-
     <b>Technologies Used:</b> Python, Deep Learning, MLflow, DVC, AWS, Docker, GitHub Actions
@@ -13,10 +46,23 @@
       </li>
       <li>Streamline the deployment process by creating an IAM user, building a Docker image, pushing it to AWS ECR, launching an EC2 instance, & deploying the image using GitHub Actions for an automated AWS CI/CD pipeline.
       </li>
-      <li>
-      Enhance configuration management through updating files, managing secrets, and configuring the model,ensuring efficient experiment tracking, logging, and tagging of models.
+      <li>Enhance configuration management through updating files, managing secrets, and configuring the model,ensuring efficient experiment tracking, logging, and tagging of models.
       </li>
     </ul> 
+
+# Uber Data Analysis Pipeline using GCP
+- project: Uber Data Analysis Pipeline using GCP
+  role: Data Engineer and Data Analyst
+  duration: Sept 2023 &mdash; Nov 2023
+  # url: "#"
+  description: >-
+    <b>Technologies Used:</b> Google Cloud Platform (GCP), BigQuery, Mage AI, Looker, Python
+    <ul class="resume-item-list">
+      <li>Orchestrated the development of a robust GCP data pipeline using Python, BigQuery, Looker, and MageAI to analyze NYC taxi trip data, resulting in a 20% improvement in data processing efficiency.
+      </li>
+      <li>Enhanced decision-making capabilities by uncovering key patterns and trends in the BigQuery data, translating findings into insightful visual dashboards with Looker. This initiative led to a 15% increase in operational efficiency.
+      </li>
+    </ul>
 
 # Quora Question Pair Similarity Detection using NLP
 - project: Quora Question Pair Similarity Detection using NLP

@@ -28,3 +28,15 @@
       <li>Promoted to Student Organizer, led the identification of hate speech in Gujarati tweets, orchestrated strategic collection of 1200 tweets using Selenium, and played a pivotal role in hands-on model fine-tuning with manual annotation of 200 tweets, leveraging Hugging Face for enhanced performance.
       </li>
     </ul>
+
+# BrainyBeam
+- company: BrainyBeam Technologies Pvt. Ltd.
+  position: Data Science Intern
+  duration: June 2022 &mdash; July 2022
+  summary: >-
+    <ul class="resume-item-list">
+      <li>Developed a recommender system utilizing Linguistics and Contextual-Based approach for sentiment identification using SVM or Bayes classifier, achieving an accuracy rate of approximately 68% with ML Algorithms.
+      </li>
+      <li>Utilized NLP methodologies to analyze and predict sentiments associated with generated content, such as reviews and comments, leveraging RNN and LSTM models, to extract insights and enhance content understanding.
+      </li>
+    </ul>
