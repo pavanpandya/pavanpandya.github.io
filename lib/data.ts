@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import medilinkImg from "@/public/medilink.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import tableauprojectImg from "@/public/tableau_project.png";
+import kidneydiseaseImg from "@/public/kidneydiseaseclassification.jpg";
+import AWStrendsImg from "@/public/AWS_trends.png";
+import taxiImg from "@/public/taxi_gcp.png";
 
 export const links = [
   {
@@ -35,73 +39,127 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    companyName: "Marchup Inc.",
+    title: "Software Developer",
+    location: "San Jose, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Engineered a Flask microservice as middleware between PHP backend and Azure OpenAI. Implemented async functions and polling mechanism for real-time interaction with 'marc,' our AI mentor, ensuring responses within a second per query. Dockerized & Deployed the application using AWS ECR & AWS ECS Fargate, achieving 50% faster deployment and supporting simultaneous users. Implemented unit testing to ensure robust performance & reliability across various deployment scenarios.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "May 2024 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    companyName: "Dhirubhai Ambani Institute of Information and Communication Technology",
+    title: "Data Science Intern",
+    location: "Gandhinagar, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Spearheaded a system for analyzing inflation-related sentiment by collecting & processing over 1.5 million tweets using Twitter API & Selenium. Applied advanced text preprocessing & BERT embeddings to extract & analyze 157K inflation-specific tweets. Implemented statistical modeling and machine learning techniques, including topic modeling with BERTopic and LDA, to explore predictive relationships between social sentiment and inflation trends.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2022 - June 2023",
+  },
+  {
+    companyName: "Brainly Beam Technologies Pvt Ltd.",
+    title: "Data Science Intern",
+    location: "Ahmedabad, India",
+    description:
+      "Developed a recommender system utilizing Linguistics and Contextual-Based approach for sentiment identification using SVM or Bayes classifier, achieving an accuracy rate of approximately 68% with ML Algorithms. Utilized NLP methodologies to analyze and predict sentiments associated with generated content, such as reviews and comments, leveraging RNN and LSTM models, to extract insights and enhance content understanding.",
+    icon: React.createElement(CgWorkAlt),
+    date: "June 2022 - July 2022",
+  },
+  {
+    companyName: "Hate Speech and Offensive Content Identification",
+    title: "Data Science Intern",
+    location: "Ahmedabad, India",
+    description:
+      "Engineered a REST API backend for a submission platform, facilitating seamless participant submissions & dashboard display with filters based on accuracy metric & task categories, resulting in a 40% increase in annotation throughput. Led the collection of 1200 Gujarati tweets for hate speech detection using selenium, enhancing model accuracy by 15% through manual annotation (200 tweets) and fine-tuning using few-shot learning techniques.",
+    icon: React.createElement(CgWorkAlt),
+    date: "June 2021 - June 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "MediLink - Patient and Insurance Management System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "As a full-stack developer, I developed a healthcare management platform enabling patients, doctors, and insurance providers to efficiently manage appointments, medical records, and insurance plans.",
+    tags: ["Django", "Next.js", "Render", "PostgreSQL", "Docker"],
+    imageUrl: medilinkImg,
   },
   {
-    title: "rmtDev",
+    title: "DocQnA – Intelligent PDF Querying LLM System",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I led the creation of a PDF-based question-answering system using retrieval-augmented generation (RAG), integrating Apache Cassandra for data management and Streamlit for a user-friendly interface.",
+    tags: ["Apache Cassandra", "Astra DB", "LangChain", "Streamlit", "Hugging Face"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Sales & Customer Data Analysis Dashboard",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "I developed Tableau dashboards for sales and customer analysis, enhancing trend identification and customer segmentation with interactive, data-driven insights.",
+    tags: ["Tableau", "ETL", "SQL", "Data Collection"],
+    imageUrl: tableauprojectImg,
+  },
+  {
+    title: "Kidney Disease Classification",
+    description:
+      "I improved kidney disease classification accuracy with a deep-learning model and streamlined the deployment process using AWS, Docker and creating an efficient CI/CD pipeline.",
+    tags: ["Python", "Deep Learning", "MLFlow", "DVC", "AWS", "Docker", "GitHub Actions"],
+    imageUrl: kidneydiseaseImg,
+  },
+  {
+    title: "Unveiling Trends - A Cloud-Driven Data Engineering Project",
+    description:
+      "I created a custom YouTube data scraper and built interactive QuickSight dashboards to analyze and visualize trending topics, supporting informed decision-making.",
+    tags: ["AWS", "S3", "Glue", "Lambda", "Athena", "QuickSight", "Python"],
+    imageUrl: AWStrendsImg,
+  },
+  {
+    title: "Uber Data Analysis Pipeline using GCP",
+    description:
+      "I developed a GCP data pipeline to analyze NYC taxi trip data, enhancing processing efficiency and operational effectiveness through insightful visualizations with Looker.",
+    tags: ["Python", "BigQuery", "Data Extraction", "Data Transformation", "MageAI", "Looker"],
+    imageUrl: taxiImg,
   },
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "R",
+  "SQL",
+  "C",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "MySQL",
   "PostgreSQL",
-  "Python",
+  "MongoDB",
+  "PyTorch",
+  "TensorFlow",
+  "Keras",
+  "Langchain",
+  "Node.js",
+  "Express.js",
   "Django",
-  "Framer Motion",
+  "Flask",
+  "Tailwind CSS",
+  "Streamlit",
+  "Scikit-learn",
+  "Pandas",
+  "NumPy",
+  "Matplotlib",
+  "Seaborn",
+  "Selenium",
+  "Hugging Face",
+  "Regex",
+  "Git",
+  "GitHub",
+  "AWS",
+  "Linux",
+  "Docker",
+  "Elasticsearch",
+  "Tableau",
+  "Postman",
+  "Render",
+  "Vercel",
+  "Firebase",
+  "Jira"
 ] as const;

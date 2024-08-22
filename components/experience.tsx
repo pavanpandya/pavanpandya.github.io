@@ -44,9 +44,10 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <h2 className="font-bold capitalize dark:text-white/75">{item.companyName}</h2>
+              <p className="font-extralight !mt-0 text-slate-400">{item.title}</p>
+              <p className="font-extralight !mt-0 text-slate-400">{item.location}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 text-justify">
                 {item.description}
               </p>
             </VerticalTimelineElement>

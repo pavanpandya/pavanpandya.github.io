@@ -19,6 +19,14 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
+      My journey with technology started with a simple curiosity—one that grew into a lifelong passion. Movies like "The Internship" and "Iron Man" fueled my dream of creating something extraordinary, like JARVIS. Today, I’m pursuing a Master’s in Computer Science and building AI applications that push the boundaries of what's possible. My work is driven by a desire to solve complex puzzles, innovate, and use technology to make life better. Collaboration is key to my approach, and I’m always excited to connect with others who share my passion.
+      </p>
+
+      <p className="mb-3">
+      When I'm not coding, you’ll find me experimenting in the kitchen or taking long walks to clear my head. Those moments help me reconnect, find inspiration, & often lead to my best idea.
+      </p>
+      {/* Template */}
+      {/* <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
@@ -34,16 +42,17 @@ export default function About() {
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
-      </p>
+      </p> */}
 
-      <p>
+      {/* Template */}
+      {/* <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
         video games, watching movies, and playing with my dog. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
-      </p>
+      </p> */}
     </motion.section>
   );
 }
