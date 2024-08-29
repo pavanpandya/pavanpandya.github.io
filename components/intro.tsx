@@ -97,7 +97,7 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           target="_blank"
-          href="https://indiana-my.sharepoint.com/:b:/g/personal/pnpandya_iu_edu/EWrzjv1SZX5HvyX9Ix5Req8BEW5dWH_yA1kT4VRPFQljOw?e=u8G0kP"
+          href="https://indiana-my.sharepoint.com/:b:/g/personal/pnpandya_iu_edu/EciKUq7knQ1Dp21zH6enhmoBekLdI0AyMPr2bkHEBa3Drw?e=dkYsG6"
           download
         >
           Download CV{" "}
