@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import itineraImg from "@/public/itinera.png";
+import nsfwDetectionImg from "@/public/nsfw_detection.png";
 import medilinkImg from "@/public/medilink.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -40,19 +42,27 @@ export const links = [
 export const experiencesData = [
   {
     companyName: "Marchup Inc.",
-    title: "Software Developer",
+    title: "Software Developer Intern",
     location: "San Jose, CA",
-    description:
-      "Enabled real-time interaction for high school students and parents by engineering a Flask microservice as middleware between the PHP backend and Azure OpenAI, providing personalized guidance for university admissions and career paths. Enhanced user experience by achieving instantaneous AI response (<1 second) through developing an async polling mechanism that fetches and processes new messages every second, improving interaction efficiency. Streamlined deployment efficiency by 50% by Dockerizing and deploying the chatbot application on AWS ECS Fargate, allowing the system to handle hundreds of daily queries with seamless uptime and faster updates. Boosted recommendation accuracy and response time by 20% by integrating Elasticsearch, which used cosine similarity to efficiently retrieve user recommendations based on message and profile embeddings, improving personalized interactions.",
+    description: [
+      "Architected a scalable, real-time AI chatbot for student counseling using Flask microservices, Azure OpenAI (dual-mode static/generative LLM architecture), and asynchronous programming, achieving <1s response time and reducing LLM API costs through caching and prompt engineering.",
+      "Engineered and optimized a data-driven user recommendation engine leveraging Elasticsearch, vector embeddings, and cosine similarity to deliver personalized user suggestions based on interests, location, and interaction history, resulting in increase in user engagement.",
+      "Led the migration from Lucene Search to AWS OpenSearch, architecting automated reindexing workflows with AWS Lambda and implementing monitoring pipelines via CloudWatch, boosting search response times and ensuring zero data loss during transition.",
+      "Orchestrated containerized deployment using Docker and AWS ECS Fargate, implementing CI/CD pipelines, automated scaling, and comprehensive testing frameworks, enabling seamless, zero-downtime deployments, and maintaining service reliability with 99.9% uptime.",
+      "Drove Agile development processes, driving cross-functional collaboration in a team of 5 dev. Conducted daily stand-ups, evaluated frameworks, performed rigorous performance testing, and aligned technical solutions with business needs, resulting in high-quality product delivery.",
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "May 2024 - Present",
+    date: "May 2024 - Nov 2024",
   },
   {
     companyName: "Dhirubhai Ambani Institute of Information and Communication Technology",
     title: "Data Science Intern",
     location: "Gandhinagar, India",
-    description:
-      "Analyzed inflation-related sentiment by collecting and processing 1.5M+ tweets via Twitter API and Selenium. Improved sentiment analysis depth by 30% by applying advanced text preprocessing and BERT embeddings to analyze 157K inflation-specific tweets, resulting in more nuanced understanding of public sentiment. Optimized forecast accuracy by 15% by developing machine learning models with BERTopic and LDA, using manual annotation of 300 tweets and hyperparameter tuning to reveal predictive relationships between sentiment and inflation trends.",
+    description: [
+      "Extracted over 1.5M+ tweets using Twitter API and Selenium, identifying 157K relevant tweets related to inflation through advanced topic modeling techniques (BERTopic, LDA), laying the groundwork for targeted economic trend analysis.",
+      "Achieved 87% sentiment trend classification accuracy by applying advanced text preprocessing and BERT embeddings, optimizing performance through model fine-tuning with manual annotation of 300 tweets and hyperparameter tuning.",
+      "Presented key findings to researchers, illustrating the influence of tweet sentiment on people's buying patterns & inflation trends."
+    ],
     icon: React.createElement(CgWorkAlt),
     date: "Nov 2022 - June 2023",
   },
@@ -60,23 +70,32 @@ export const experiencesData = [
     companyName: "Hate Speech and Offensive Content Identification",
     title: "Data Science Intern",
     location: "Ahmedabad, India",
-    description:
-      "Increased annotation throughput by 40% by engineering a REST API backend for a submission platform, enabling seamless participant submissions and dashboard filtering by accuracy and task categories. Refined model accuracy by 15% by leading the collection of 1,200 Gujarati tweets for hate speech detection, using Selenium for data gathering, manual annotation of 200 tweets, and fine-tuning with few-shot learning techniques.",
+    description: [
+      "Enhanced model performance by 15% by fine-tuning a BERT-based multilingual model using pseudo-labeling techniques, leveraging data for hate speech detection, and optimizing it with few-shot learning for low-resource languages.",
+      "Increased annotation throughput by 40% by developing a REST API backend that streamlined participant submissions and introduced dynamic dashboard filtering by task accuracy and categories, enabling faster and more efficient workflows.",
+      "Ensured seamless platform functionality by performing unit and integration testing and enforcing adherence to a CI/CD pipeline, while improving user experience through UI enhancements and content updates on the front end.",
+    ],
     icon: React.createElement(CgWorkAlt),
     date: "June 2021 - June 2023",
   },
-  {
-    companyName: "Brainly Beam Technologies Pvt Ltd.",
-    title: "Data Science Intern",
-    location: "Ahmedabad, India",
-    description:
-      "Achieved 78% accuracy in sentiment identification by developing a recommender system using linguistics and contextual approaches with SVM and Bayes classifiers. Deepened content understanding by analyzing and predicting sentiments in reviews and comments using NLP methodologies, leveraging RNN and LSTM models to extract actionable insights.",
-    icon: React.createElement(CgWorkAlt),
-    date: "June 2022 - July 2022",
-  },
 ] as const;
 
+
 export const projectsData = [
+  {
+    title: "Itinera - Full Stack AI Travel Planner Application",
+    description:
+      "Developed a full-stack travel planning app that provides personalized recommendations and real-time data synchronization, enhancing the user experience with AI-driven features and secure cloud-based services.",
+    tags: ["React", "Gemini AI", "TailwindCSS", "Firebase"],
+    imageUrl: itineraImg,
+  },
+  {
+    title: "Optimized NSFW Content Detection for Real-Time Moderation",
+    description:
+      "Developed an NSFW content detection model using ResNet18, achieving 95.1% accuracy and optimizing model size and inference speed for real-time moderation on resource-constrained devices.",
+    tags: ["PyTorch", "CNN", "Deep Learning", "Quantization"],
+    imageUrl: nsfwDetectionImg,
+  },
   {
     title: "MediLink - Patient and Insurance Management System",
     description:
@@ -123,23 +142,21 @@ export const projectsData = [
 
 export const skillsData = [
   "Python",
-  "R",
+  "JavaScript",
   "C",
   "C++",
-  "Node.js",
-  "Express.js",
-  "Django",
-  "Flask",
+  "PHP",
   "HTML",
   "CSS",
-  "JavaScript",
+  "Node.js",
+  "Express.js",
+  "React",
+  "Flask",
+  "Django",
+  "LangChain",
   "RESTful APIs",
-  "Tailwind CSS",
-  "Streamlit",
   "PyTorch",
   "TensorFlow",
-  "Keras",
-  "Langchain",
   "Scikit-learn",
   "Pandas",
   "NumPy",
@@ -149,6 +166,8 @@ export const skillsData = [
   "Selenium",
   "Huggingface",
   "Regex",
+  "Tailwind CSS",
+  "Streamlit",
   "SQL",
   "PostgreSQL",
   "MySQL",
@@ -170,6 +189,7 @@ export const skillsData = [
   "Hadoop",
   "Apache Spark",
   "Postman",
+  "Swagger",
   "Tableau",
   "Render",
   "Vercel",
