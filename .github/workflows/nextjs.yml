@@ -60,15 +60,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
-      # Debug cache restoration
-      - name: Check cache directory
-        run: ls -la .next/cache
-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      # Check if .next/cache exists after build
+      - name: Check if cache directory exists
+        run: |
+          if [ -d ".next/cache" ]; then
+            echo ".next/cache exists, listing contents:"
+            ls -la .next/cache
+          else
+            echo ".next/cache directory does not exist."
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
