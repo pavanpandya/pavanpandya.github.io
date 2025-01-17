@@ -23,9 +23,9 @@ export default function ScrollToTop() {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-90 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 z-50"
+        className="fixed bottom-5 right-5 bg-gray-800 w-[3rem] h-[3rem] bg-opacity-90 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:bg-gray-700 active:bg-gray-600 transition-all dark:bg-teal-600 dark:hover:bg-teal-700 dark:active:bg-teal-800 z-50"
       >
-        <BsArrowUp />
+        <BsArrowUp className="text-white" />
       </button>
     )
   );
