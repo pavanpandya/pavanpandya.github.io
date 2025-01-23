@@ -60,11 +60,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
+      - name: Clean previous build artifacts
+        run: rm -rf .next
+
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Export static site
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       # Check if .next/cache exists after build
       - name: Check if cache directory exists
