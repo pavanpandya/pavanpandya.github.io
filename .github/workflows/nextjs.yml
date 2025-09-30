@@ -68,6 +68,8 @@ jobs:
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          NEXT_PUBLIC_RESUME_URL: ${{ secrets.NEXT_PUBLIC_RESUME_URL }}
 
       - name: Export static site
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
