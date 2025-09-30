@@ -2,13 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import flagShipImg from "@/public/flagship.png";
+import iuCourseCompassImg from "@/public/iu_course_compass.png";
 import itineraImg from "@/public/itinera.png";
 import nsfwDetectionImg from "@/public/nsfw_detection.png";
 import medilinkImg from "@/public/medilink.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import tableauprojectImg from "@/public/tableau_project.png";
-import kidneydiseaseImg from "@/public/kidneydiseaseclassification.jpg";
 import AWStrendsImg from "@/public/AWS_trends.png";
 import taxiImg from "@/public/taxi_gcp.png";
 
@@ -20,6 +18,10 @@ export const links = [
   {
     name: "About",
     hash: "#about",
+  },
+  {
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Projects",
@@ -41,27 +43,51 @@ export const links = [
 
 export const experiencesData = [
   {
+    companyName: "Offline Talent",
+    title: "Product Engineer",
+    location: "Chicago, IL",
+    description: [
+      "Engineered the MVP of a marketing discovery platform for brands to execute in-person campaigns at scale through a network of 10,000+ IRL communities, delivering the application in 5 weeks by building 30+ components with React and TypeScript.",
+      "Architected the core backend system by designing 33+ RESTful API endpoints with server-side pagination in Node.js, supported by a scalable PostgreSQL schema on Neon DB to ensure efficient data handling for 10,000+ communities.",
+      "Drove product velocity by establishing a comprehensive testing suite with Jest (unit) and Postman (API) and leveraging AI-powered tools, enabling an automated CI/CD pipeline for rapid deployments to Vercel and Railway.",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2025 - Present",
+  },
+  {
+    companyName: "Heartland Community Network",
+    title: "Senior Consultant – Software Engineer (Contract)",
+    location: "Remote",
+    description: [
+      "Led and developed an Advertising Marketplace platform from ideation to first launch by running client workshops to define product scope, translating business requirements into Jira stories and aligning stakeholders and engineers for faster delivery.",
+      "Developed core product features in React, integrating REST APIs and collaborating with product manager, engineers and designers to deliver a user-focused solution, supporting business goals and ensuring reliable performance through Postman API testing.",
+      "Architected a backend system using Node.js with optimized SQL database schemas and REST APIs, applying MVC design architecture to create a maintainable platform that supports future scalability and smooth feature expansion.",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2025 - Present",
+  },
+  {
     companyName: "Marchup Inc.",
     title: "Software Developer Intern",
     location: "San Jose, CA",
     description: [
-      "Architected a scalable, real-time AI chatbot for student counseling using Flask microservices, Azure OpenAI (dual-mode static/generative LLM architecture), and asynchronous programming, achieving <1s response time and reducing LLM API costs through caching and prompt engineering.",
-      "Engineered and optimized a data-driven user recommendation engine leveraging Elasticsearch, vector embeddings, and cosine similarity to deliver personalized user suggestions based on interests, location, and interaction history, resulting in increase in user engagement.",
-      "Led the migration from Lucene Search to AWS OpenSearch, architecting automated reindexing workflows with AWS Lambda and implementing monitoring pipelines via CloudWatch, boosting search response times and ensuring zero data loss during transition.",
-      "Orchestrated containerized deployment using Docker and AWS ECS Fargate, implementing CI/CD pipelines, automated scaling, and comprehensive testing frameworks, enabling seamless, zero-downtime deployments, and maintaining service reliability with 99.9% uptime.",
-      "Drove Agile development processes, driving cross-functional collaboration in a team of 5 dev. Conducted daily stand-ups, evaluated frameworks, performed rigorous performance testing, and aligned technical solutions with business needs, resulting in high-quality product delivery.",
+      "Designed and launched an AI-powered counseling chatbot using Python (Flask) and Azure OpenAI, providing real-time personalized guidance to students and parents and improving session satisfaction by 20% as measured through surveys.",
+      "Optimized chatbot performance with Redis caching and asynchronous processing to deliver sub-second responses to concurrent users and introduced a dual-mode logic flow (static for FAQs, generative for new queries) that saved $600/month in cloud costs.",
+      "Developed two key engagement features - an adaptive AI to generate contextual follow-up questions and a user recommendation engine using Elasticsearch and cosine similarity to connect users, driving higher daily engagement.",
+      "Automated document updates with AWS Lambda (Python Script) and implemented system health monitoring via CloudWatch during migration to AWS OpenSearch, improving search accuracy and ensuring stable performance for 10,000+ documents.",
+      "Automated deployments to AWS ECS Fargate using CDK and Docker, worked cross-functionally to integrate CI/CD pipelines with Pytest for unit and integration testing and performed 20+ peer code reviews to ensure high code quality and reliable releases.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "May 2024 - Nov 2024",
+    date: "Jun 2024 - Nov 2024",
   },
   {
-    companyName: "Dhirubhai Ambani Institute of Information and Communication Technology",
+    companyName: "Dhirubhai Ambani University",
     title: "Data Science Intern",
     location: "Gandhinagar, India",
     description: [
-      "Extracted over 1.5M+ tweets using Twitter API and Selenium, identifying 157K relevant tweets related to inflation through advanced topic modeling techniques (BERTopic, LDA), laying the groundwork for targeted economic trend analysis.",
-      "Achieved 87% sentiment trend classification accuracy by applying advanced text preprocessing and BERT embeddings, optimizing performance through model fine-tuning with manual annotation of 300 tweets and hyperparameter tuning.",
-      "Presented key findings to researchers, illustrating the influence of tweet sentiment on people's buying patterns & inflation trends."
+      "Enhanced model performance by 15% by fine-tuning a BERT-based multilingual model using pseudo-labeling techniques, leveraging data for hate speech detection, and optimizing it with few-shot learning for low-resource languages.",
+      "Increased annotation throughput by 40% by developing a REST API backend that streamlined participant submissions and introduced dynamic dashboard filtering by task accuracy and categories, enabling faster and more efficient workflows.",
+      "Automated Twitter data scraping and built preprocessing pipelines, reducing weekly maintenance by 80% (10 to 2 hours) by cleaning and structuring 10K+ tweets and developing REST APIs with unittest coverage for submission and registration workflows.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Nov 2022 - June 2023",
@@ -69,19 +95,57 @@ export const experiencesData = [
   {
     companyName: "Hate Speech and Offensive Content Identification",
     title: "Data Science Intern",
-    location: "Ahmedabad, India",
+    location: "Gandhinagar, India",
     description: [
-      "Enhanced model performance by 15% by fine-tuning a BERT-based multilingual model using pseudo-labeling techniques, leveraging data for hate speech detection, and optimizing it with few-shot learning for low-resource languages.",
-      "Increased annotation throughput by 40% by developing a REST API backend that streamlined participant submissions and introduced dynamic dashboard filtering by task accuracy and categories, enabling faster and more efficient workflows.",
-      "Ensured seamless platform functionality by performing unit and integration testing and enforcing adherence to a CI/CD pipeline, while improving user experience through UI enhancements and content updates on the front end.",
+      "Built a full-stack competition platform that automated submission evaluation and leaderboard updates using Python and JavaScript, increasing participation by 40% and reliably handling 500+ entries across 15+ teams.",
+      "Developed a registration portal with JavaScript, HTML/CSS and GCP storage, enabling participants to register and upload documents directly, while giving organizers an admin panel for document verification, cutting onboarding time by 67% from 15 to 5 mins/user.",
+      "Automated Twitter data scraping and built preprocessing pipelines, reducing weekly maintenance by 80% (10 to 2 hours) by cleaning and structuring 10K+ tweets and developing REST APIs with unittest coverage for submission and registration workflows.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "June 2021 - June 2023",
   },
 ] as const;
 
+export const educationData = [
+  {
+    school: "Indiana University Bloomington",
+    degree: "Master of Science in Computer Science",
+    location: "Bloomington, IN",
+    description: [
+      "Relevant Coursework: Applied Algorithms, Computer Networks, Deep Learning Systems, Applied Machine Learning, Software Engineering - I, Engineering Cloud Computing, Information Visualization, Elements of Artificial Intelligence, Introduction to Statistics",
+      "Graduated with GPA: 3.7 / 4.0",
+    ],
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2023 - May 2025",
+  },
+  {
+    school: "LDRP Institute of Technology and Research",
+    degree: "Bachelor of Engineering in Computer Engineering",
+    location: "Gandhinagar, India",
+    description: [
+      "Relevant Coursework: Software Engineering, Design & Analysis of Algorithms, Computer Networks, Database Management Systems, Web Development, Artificial Intelligence, Object Oriented Programming, Data Structure and Algorithms, Python, Machine Learning, Soft Computing, Natural language processing, Image Processing, Optimization Techniques",
+      "Graduated with CGPA: 9.1 / 10.0",
+    ],
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2019 - May 2023",
+  },
+] as const;
 
 export const projectsData = [
+  {
+    title: "Flagship",
+    description:
+      "Engineered a distributed feature flag system to enable teams to safely turn features on/off without redeploying code, creating a full-stack solution and Prometheus for monitoring.",
+    tags: ["Golang", "React", "Node.js", "Python", "Kubernetes", "Prometheus"],
+    imageUrl: flagShipImg,
+  },
+  {
+    title: "IU Course Compass",
+    description:
+      "An AI-powered course planner that generates personalized recommendations by analyzing historical grade data and professor ratings to help them make informed academic decisions.",
+    tags: ["React", "TailwindCSS", "FastAPI", "Supabase", "Gemini AI"],
+    imageUrl: iuCourseCompassImg,
+  },
   {
     title: "Itinera - Full Stack AI Travel Planner Application",
     description:
@@ -104,94 +168,57 @@ export const projectsData = [
     imageUrl: medilinkImg,
   },
   {
-    title: "DocQnA – Intelligent PDF Querying LLM System",
-    description:
-      "I led the creation of a PDF-based question-answering system using retrieval-augmented generation (RAG), integrating Apache Cassandra for data management and Streamlit for a user-friendly interface.",
-    tags: ["Apache Cassandra", "Astra DB", "LangChain", "Streamlit", "Hugging Face"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Sales & Customer Data Analysis Dashboard",
-    description:
-      "I developed Tableau dashboards for sales and customer analysis, enhancing trend identification and customer segmentation with interactive, data-driven insights.",
-    tags: ["Tableau", "ETL", "SQL", "Data Collection"],
-    imageUrl: tableauprojectImg,
-  },
-  {
-    title: "Kidney Disease Classification",
-    description:
-      "I improved kidney disease classification accuracy with a deep-learning model and streamlined the deployment process using AWS, Docker and creating an efficient CI/CD pipeline.",
-    tags: ["Python", "Deep Learning", "MLFlow", "DVC", "AWS", "Docker", "GitHub Actions"],
-    imageUrl: kidneydiseaseImg,
-  },
-  {
     title: "Unveiling Trends - A Cloud-Driven Data Engineering Project",
     description:
       "I created a custom YouTube data scraper and built interactive QuickSight dashboards to analyze and visualize trending topics, supporting informed decision-making.",
     tags: ["AWS", "S3", "Glue", "Lambda", "Athena", "QuickSight", "Python"],
     imageUrl: AWStrendsImg,
   },
-  {
-    title: "Uber Data Analysis Pipeline using GCP",
-    description:
-      "I developed a GCP data pipeline to analyze NYC taxi trip data, enhancing processing efficiency and operational effectiveness through insightful visualizations with Looker.",
-    tags: ["Python", "BigQuery", "Data Extraction", "Data Transformation", "MageAI", "Looker"],
-    imageUrl: taxiImg,
-  },
 ] as const;
 
 export const skillsData = [
   "Python",
   "JavaScript",
-  "C",
-  "C++",
-  "PHP",
+  "TypeScript",
+  "SQL",
+  "React",
+  "Next.js",
   "HTML",
   "CSS",
+  "Tailwind CSS",
   "Node.js",
   "Express.js",
-  "React",
   "Flask",
   "Django",
-  "LangChain",
+  "FastAPI",
   "RESTful APIs",
-  "PyTorch",
-  "TensorFlow",
-  "Scikit-learn",
-  "Pandas",
-  "NumPy",
-  "NLTK",
-  "Matplotlib",
-  "Seaborn",
-  "Selenium",
-  "Huggingface",
-  "Regex",
-  "Tailwind CSS",
-  "Streamlit",
-  "SQL",
-  "PostgreSQL",
-  "MySQL",
-  "SQLite",
-  "NoSQL",
-  "MongoDB",
-  "Apache Cassandra",
-  "DynamoDB",
-  "Redis",
+  "GraphQL",
+  "Microservices",
   "AWS",
   "Azure",
-  "Docker",
-  "GitHub Actions",
-  "CI/CD",
-  "Kubernetes",
+  "Firebase",
+  "Supabase",
+  "NeonDB",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "DynamoDB",
+  "Redis",
+  "Elasticsearch",
   "Git",
   "Linux",
-  "Elasticsearch",
-  "Hadoop",
-  "Apache Spark",
+  "GitHub Actions",
+  "CI/CD",
+  "Docker",
+  "Kubernetes",
+  "Terraform",
+  "Selenium",
+  "Jest",
+  "PyTest",
   "Postman",
   "Swagger",
-  "Tableau",
   "Render",
+  "Railway",
   "Vercel",
   "Jira",
   "Agile",
@@ -199,4 +226,5 @@ export const skillsData = [
   "SDLC",
   "Unit Testing",
   "Integration Testing",
+  "Power BI",
 ] as const;
