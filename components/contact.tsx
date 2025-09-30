@@ -17,11 +17,14 @@ export default function Contact() {
 
     try {
       const formData = new FormData(event.currentTarget);
-      
-      const response = await fetch("https://formsubmit.co/pavanpandya.iu@gmail.com", {
-        method: "POST",
-        body: formData,
-      });
+
+      const response = await fetch(
+        "https://formsubmit.co/pavanpandya.iu@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         toast.success("Email sent successfully!");

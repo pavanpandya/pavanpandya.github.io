@@ -19,12 +19,38 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      My journey with technology started with a simple curiosity—one that grew into a lifelong passion. Movies like "The Internship" and "Iron Man" fueled my dream of creating something extraordinary, like JARVIS. Today, I’m pursuing a Master’s in Computer Science and building AI applications that push the boundaries of what's possible. My work is driven by a desire to solve complex puzzles, innovate, and use technology to make life better. Collaboration is key to my approach, and I’m always excited to connect with others who share my passion.
+        With a background in{" "}
+        <span className="font-medium">Computer Science</span>, I’ve built and
+        shipped{" "}
+        <span className="font-medium">AI-powered full-stack applications</span>{" "}
+        across startups, research labs, and consulting.{" "}
+        <span className="italic">What drives me</span> is the challenge of
+        turning ideas into scalable products, whether that means architecting
+        reliable backend systems, crafting clean user interfaces, or automating
+        infrastructure. My core stack includes{" "}
+        <span className="font-medium">
+          Python, React, Node.js, Django, Flask, and PostgreSQL
+        </span>
+        , and I’m experienced with{" "}
+        <span className="font-medium">
+          AWS, Docker, Kubernetes, and CI/CD pipelines
+        </span>
+        . I’m currently seeking a{" "}
+        <span className="font-medium">full-time Software Engineer role</span>{" "}
+        where I can contribute end-to-end and make an impact.
       </p>
 
-      <p className="mb-3">
-      When I'm not coding, you’ll find me experimenting in the kitchen or taking long walks to clear my head. Those moments help me reconnect, find inspiration, & often lead to my best idea.
+      <p>
+        <span className="italic">Outside of coding</span>, I enjoy experimenting
+        in the kitchen and taking long walks with music or podcasts, great ways
+        to recharge and spark fresh ideas. I thrive on{" "}
+        <span className="font-medium">
+          collaboration and continuous learning
+        </span>
+        , and I’m always excited to build meaningful products alongside great
+        teams.
       </p>
+
       {/* Template */}
       {/* <p className="mb-3">
         After graduating with a degree in{" "}
